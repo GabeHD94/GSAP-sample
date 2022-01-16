@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import DualPanel from "../components/shared/dualPanel";
 import { ThemeProvider } from "styled-components";
+import Mpg from "../assests/mpg.png"
+import Hp from "../assests/hp.png"
+import ZeroSixty from "../assests/zerosixty.png"
 
 const theme = {
   font: "Bebas Neue",
@@ -39,15 +42,18 @@ export default function SectionTwo() {
         <section>
           <h1>{carStats[currentCar].make}</h1>
           <p>{carStats[currentCar].model}</p>
-          <span>
+          <div>
+            <img src={Mpg}></img>
             <h2>{carStats[currentCar].mpg}</h2>
-          </span>
-          <span>
+          </div>
+          <div>
+            <img  src={Hp}></img>
             <h2>{carStats[currentCar].hp}</h2>
-          </span>
-          <span>
+          </div>
+          <div>
+            <img  src={ZeroSixty}></img>
             <h2>{carStats[currentCar].zeroSixty}</h2>
-          </span>
+          </div>
         </section>
 
         <main>
