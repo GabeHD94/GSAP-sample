@@ -130,7 +130,7 @@ export default styled.div`
     }
   }
   @media screen and (max-width: 600px) {
-    flex-direction: column;
+    flex-direction: column-reverse;
     /* width: 100%; */
   }
 `;

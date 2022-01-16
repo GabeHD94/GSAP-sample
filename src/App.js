@@ -2,6 +2,9 @@
 import React, { useState, useEffect} from 'react';
 import Header from './sections/header'
 import SectionTwo from './sections/sectionTwo'
+import SectionThree from './sections/sectionThree'
+import SectionFour from './sections/sectionFour'
+import SectionSix from './sections/sectionSix'
 
 
 function App() {
@@ -23,6 +26,9 @@ function App() {
           <div>
             <Header/>
             <SectionTwo/>
+            <SectionThree/>
+            <SectionFour/>
+            <SectionSix/>
 
 
           </div>
