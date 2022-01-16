@@ -21,11 +21,6 @@ export default styled.div`
     }
   }
 
-
-
-
-
-
   main {
     font-family: ${(props) => props.theme.font};
     display: flex;
@@ -45,18 +40,23 @@ export default styled.div`
       font-size: 6vw;
       line-height: 6vw;
       letter-spacing: -1px;
-      color: #2B3144;
+      color: #2b3144;
+      @media screen and (max-width: 700px) {
+        width: 80vw;
+        line-height: 50px;
+        font-size: 10vw;
+        margin: 0;
+      }
     }
     p {
       width: 34vw;
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 700;
+      font-family: "Roboto", sans-serif;
+      font-weight: 900;
+      line-height: 25px;
     }
-    
-    
   }
   @media screen and (max-width: 700px) {
     flex-direction: column-reverse;
-
+    width: 100%;
   }
 `;
