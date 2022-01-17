@@ -3,6 +3,8 @@ import DualPanelFour from "../components/shared/dualPanelsFour";
 import PorscheFront from "../assests/porsche-front.png";
 import Merc from "../assests/merc.png";
 import ManSmiling from "../assests/touched.png";
+import ArrowRight from "../assests/rightarrow.svg";
+
 import { ThemeProvider } from "styled-components";
 
 const theme = {
@@ -20,9 +22,19 @@ export default function SectionFour() {
         <main>
           <h2>Customers with that new car smell</h2>
           <p>
-          “With Eleanor I was able to drive 2 of my dream cars this year!  The process is always easy and affordable!”
+            “With Eleanor I was able to drive 2 of my dream cars this year! The
+            process is always easy and affordable!”
+            <span>Alex Bateman, Interface Designer</span>
+          <hr></hr>
           </p>
-          <img src={Merc}></img>  
+
+          <span>
+            Avalible On the App
+            <img src={ArrowRight}></img>
+          </span>
+          <div>
+            <img src={Merc}></img>
+          </div>
         </main>
       </DualPanelFour>
     </ThemeProvider>

@@ -130,6 +130,8 @@ export default styled.div`
   }
   @media screen and (max-width: 600px) {
     flex-direction: column-reverse;
+    margin: 10vw 0;
+
     /* width: 100%; */
   }
 `;

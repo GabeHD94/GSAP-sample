@@ -101,6 +101,8 @@ export default styled.div`
     }
   }
   @media screen and (max-width: 600px) {
+    margin: 10vw 0;
+
     flex-direction: column;
   }
 `;
