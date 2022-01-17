@@ -3,19 +3,39 @@ import styled from "styled-components";
 export default styled.div`
   display: flex;
   align-items: center;
+
   section {
     font-family: ${(props) => props.theme.font};
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: ${(props) => (props.car ? "flex-end" : "center")};
     margin: 10vw 5.8vw;
     width: 30vw;
     height: 40vw;
-    img{
-      margin: 90px;
-      width: 50%;
+    img {
+      margin: 30px;
+      width: 55vw;
       position: absolute;
+      @media screen and (max-width: 600px) {
+        width: 100%;
+        margin: 0;
+      }
+    }
+    div {
+      img {
+        margin: 13vw 0 0 -40vw;
+        width: 32vw;
+        @media screen and (max-width: 600px) {
+          display: none;
+        }
+      }
+    }
+    @media screen and (max-width: 820px) {
+      display: flex;
+      margin: 1vw 5.8vw;
 
+      width: 25vw;
+      height: 40vh;
     }
 
     @media screen and (max-width: 600px) {
@@ -31,9 +51,8 @@ export default styled.div`
     font-family: ${(props) => props.theme.font};
     display: flex;
     justify-content: center;
-    /* align-items: center; */
     flex-direction: column;
-    margin: 100px 0px 100px 5.8vw;
+    margin: 0px 0px 0px 5.8vw;
     width: 39vw;
     height: 40vw;
 
@@ -46,12 +65,10 @@ export default styled.div`
       line-height: 5vw;
       letter-spacing: -1px;
       color: #2b3144;
-      width: 27vw;
+      width: 23vw;
 
       @media screen and (max-width: 820px) {
-        width: 40vw;
-        line-height: 50px;
-        font-size: 6vw;
+        line-height: 5vw;
         margin: 0;
       }
       @media screen and (max-width: 600px) {
@@ -68,21 +85,22 @@ export default styled.div`
       font-weight: 900;
       line-height: 1.9vw;
       @media screen and (max-width: 820px) {
-        width: 40vw;
-        font-size: 1.5vw;
-        line-height: 20px;
+        width: 20vw;
+        font-size: 1vw;
+        line-height: 15px;
         @media screen and (max-width: 600px) {
-          width: 80vw;
-          font-size: 3vw;
+          width: 90vw;
+          line-height: 6vw;
+
+          font-size: 3.9vw;
         }
       }
     }
     @media screen and (max-width: 600px) {
-      margin: 0 25px;
+      width: 95%;
     }
   }
   @media screen and (max-width: 600px) {
     flex-direction: column;
-    /* width: 100%; */
   }
 `;
