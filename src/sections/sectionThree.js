@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import DualPanelTwo from "../components/shared/dualPanelTwo";
 import { ThemeProvider } from "styled-components";
-import Mpg from "../assests/mpg.png"
-import Hp from "../assests/hp.png"
-import ZeroSixty from "../assests/zerosixty.png"
+import Map from "../assests/map.png"
+import Porsche from "../assests/porsche-model.png"
+import CarDelivery from "../assests/carDelivery.png"
+import MapPath from "../assests/mapPath.png"
 
 const theme = {
   font: "Bebas Neue",
@@ -23,6 +24,11 @@ export default function SectionThree() {
         </main>
 
         <section>
+          <img src={Map}></img>
+          <img src={MapPath}></img>
+          {/* <img src={CarDelivery}></img> */}
+
+          <img src={Porsche}></img>
         </section>
       </DualPanelTwo>
     </ThemeProvider>

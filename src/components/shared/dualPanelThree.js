@@ -26,10 +26,7 @@ export default styled.div`
       height: 40vh;
     }
     img{
-        /* position: absolute; */
-        /* left: 6; */
         width: 30vw;
-        /* z-index: 0; */
 
     }
   }
@@ -49,17 +46,16 @@ export default styled.div`
 
       font-family: "Bebas Neue";
       font-weight: 300;
-      /* margin: 90px 0; */
-      font-size: 6vw;
-      line-height: 6vw;
+      font-size: 5vw;
+      line-height: 5vw;
       letter-spacing: -1px;
       color: #2b3144;
-      width: 40vw;
+      width: 30vw;
 
       @media screen and (max-width: 820px) {
-        width: 50vw;
-        line-height: 60px;
-        font-size: 8vw;
+        width: 40vw;
+        line-height: 50px;
+        font-size: 6vw;
         margin: 0;
       }
       @media screen and (max-width: 600px) {
