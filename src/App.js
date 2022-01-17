@@ -4,6 +4,7 @@ import Header from './sections/sectionOne'
 import SectionTwo from './sections/sectionTwo'
 import SectionThree from './sections/sectionThree'
 import SectionFour from './sections/sectionFour'
+import SectionFive from './sections/sectionFive'
 import SectionSix from './sections/sectionSix'
 
 
@@ -28,6 +29,7 @@ function App() {
             <SectionTwo/>
             <SectionThree/>
             <SectionFour/>
+            <SectionFive/>
             <SectionSix/>
 
 
