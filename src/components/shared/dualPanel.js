@@ -89,11 +89,12 @@ export default styled.div`
 
       font-family: "Bebas Neue";
       font-weight: 300;
-      font-size: 5vw;
+      font-size: ${(props) => props.theme.hTwosize};
+
       line-height: 5vw;
       letter-spacing: -1px;
       color: #2b3144;
-      width: 30vw;
+      width: 34vw;
 
       @media screen and (max-width: 820px) {
         width: 40vw;
@@ -130,7 +131,7 @@ export default styled.div`
   }
   @media screen and (max-width: 600px) {
     flex-direction: column-reverse;
-    margin: 10vw 0;
+    margin: 20vw -1px;
 
     /* width: 100%; */
   }

@@ -8,6 +8,8 @@ import MapPath from "../assests/mapPath.png";
 
 const theme = {
   font: "Bebas Neue",
+  hTwosize: "6vw",
+
 };
 
 export default function SectionThree() {
@@ -23,7 +25,7 @@ export default function SectionThree() {
         </main>
 
         <section>
-          <img src={Map}></img>
+          {/* <img src={Map}></img> */}
           <img src={MapPath}></img>
           <div>
             <img src={Porsche}></img>

@@ -22,16 +22,16 @@ export default styled.div`
       justify-content: center;
       align-items: flex-end;
       /* margin: 1vw 5.8vw; */
-    padding-right: 0px;
+      padding-right: 0px;
 
       width: 100%;
-      height: 125vw;
+      height: 110vw;
     }
     img {
       position: absolute;
       width: 30vw;
       @media screen and (max-width: 600px) {
-        width: 80vw;
+        width: 70vw;
         /* margin-left: 7vw; */
       }
     }
@@ -59,49 +59,46 @@ export default styled.div`
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin: 0px 0px 0px 5.8vw;
+    margin: -6vh 0px 0px 5vw;
     width: 39vw;
     height: 40vw;
 
     span {
-    display: flex;
-    align-items: center;
-    color: #414a69;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 600;
-    font-size: 1vw;
-    img {
-      margin-left: 2vw;
-      width: 1vw;
-      fill: #94d31b;
+      display: flex;
+      align-items: center;
+      color: #414a69;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 600;
+      font-size: 1vw;
+      img {
+        margin-left: 2vw;
+        width: 1vw;
+        fill: #94d31b;
+        @media screen and (max-width: 700px) {
+          width: 3vw;
+        }
+      }
       @media screen and (max-width: 700px) {
-      width: 3vw;
-    
-  }
-    }         
-    @media screen and (max-width: 700px) {
-      font-size: 3vw;
+        font-size: 3vw;
+      }
     }
-    
-  }
 
     h2 {
-      margin: 5vw 5vw 60px 0;
-
-      font-family: "Bebas Neue";
+      margin: 5vw 5vw 2vw 0;
       font-weight: 300;
-      font-size: 5vw;
+      font-size: ${(props) => props.theme.hTwosize};
+
       line-height: 5vw;
       letter-spacing: -1px;
       color: #2b3144;
-      width: 32vw;
+      width: 38vw;
 
       @media screen and (max-width: 820px) {
         line-height: 5vw;
         margin: 0;
       }
       @media screen and (max-width: 600px) {
-        width: 80vw;
+        width: 90vw;
         line-height: 9.9vw;
         font-size: 11vw;
         margin: 0;
@@ -123,7 +120,7 @@ export default styled.div`
           font-size: 3.9vw;
         }
       }
-      span{
+      span {
         margin-top: 10px;
         color: black;
       }
@@ -141,17 +138,22 @@ export default styled.div`
         }
       }
     }
-    hr{
-      width:31vw;
+    hr {
+      width: 23vw;
       height: 5px;
       border: none;
-      background-color: #F4F4F5;
+      background-color: #f4f4f5;
+      @media screen and (max-width: 600px) {
+        width: 20vh;
+      }
       /* margin-bottom: 0; */
-
+    }
+    @media screen and (max-width: 600px) {
+      margin: 10vw 5vw 10vw 10vw;
     }
   }
   @media screen and (max-width: 600px) {
-    margin: 10vw 0;
+    margin: 20vw -2px;
 
     flex-direction: column-reverse;
   }

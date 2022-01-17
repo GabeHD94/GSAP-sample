@@ -18,7 +18,7 @@ export default styled.div`
       position: absolute;
       @media screen and (max-width: 600px) {
         width: 100%;
-        margin: 0;
+        margin: 5vw 0;
       }
     }
     div {
@@ -44,6 +44,7 @@ export default styled.div`
 
       width: 88.3vw;
       height: 40vh;
+      overflow: hidden;
     }
   }
 
@@ -59,13 +60,15 @@ export default styled.div`
     h2 {
       margin: 5vw 5vw 2vw 0;
 
-      font-family: "Bebas Neue";
+      /* font-family: "Bebas Neue"; */
       font-weight: 300;
-      font-size: 5vw;
+      font-size: ${(props) => props.theme.hTwosize};
+
+      /* font-size: 5vw; */
       line-height: 5vw;
       letter-spacing: -1px;
       color: #2b3144;
-      width: 23vw;
+      width: 30vw;
 
       @media screen and (max-width: 820px) {
         line-height: 5vw;
@@ -101,7 +104,8 @@ export default styled.div`
     }
   }
   @media screen and (max-width: 600px) {
-    margin: 10vw 0;
+    margin: 20vw -1px;
+
 
     flex-direction: column;
   }

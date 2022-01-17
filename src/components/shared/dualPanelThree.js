@@ -63,13 +63,13 @@ export default styled.div`
     h2 {
       margin: 5vw 5vw 2vw 0;
 
-      font-family: "Bebas Neue";
       font-weight: 300;
-      font-size: 5vw;
+      font-size: ${(props) => props.theme.hTwosize};
+
       line-height: 5vw;
       letter-spacing: -1px;
       color: #2b3144;
-      width: 30vw;
+      width: 34vw;
 
       @media screen and (max-width: 820px) {
         line-height: 5vw;
@@ -92,21 +92,23 @@ export default styled.div`
         width: 20vw;
         font-size: 1vw;
         line-height: 15px;
-        @media screen and (max-width: 600px) {
-          width: 90vw;
-          line-height: 6vw;
+      }
+      @media screen and (max-width: 600px) {
+        width: 89vw;
+        line-height: 6vw;
 
-          font-size: 3.9vw;
-        }
+        font-size: 3.9vw;
       }
     }
     @media screen and (max-width: 600px) {
       width: 95%;
     }
+
   }
   @media screen and (max-width: 600px) {
     flex-direction: column-reverse;
-    margin: 10vw 0;
+    margin: 20vw -1px;
+
 
   }
 `;

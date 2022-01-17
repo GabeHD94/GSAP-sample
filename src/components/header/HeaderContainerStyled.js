@@ -10,14 +10,14 @@ export default styled.div`
   margin-bottom: 10vh;
   
   main{
-    height: 83vh;
+    height: 43vw;
     background-color: #fbc843;
 
     @media screen and (max-width: 820px) {
-      height:50vw;
+      /* height:50vw; */
   
     }
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 600px) {
       height: 100vw;
   
     }

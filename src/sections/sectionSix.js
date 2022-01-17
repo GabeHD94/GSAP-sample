@@ -9,6 +9,7 @@ import { ThemeProvider } from "styled-components";
 
 const theme = {
   font: "Bebas Neue",
+  hTwosize: "6vw",
 };
 
 export default function SectionFour() {

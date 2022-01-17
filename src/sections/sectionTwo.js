@@ -7,6 +7,8 @@ import ZeroSixty from "../assests/zerosixty.png"
 
 const theme = {
   font: "Bebas Neue",
+  hTwosize: "6vw",
+
 };
 
 export default function SectionTwo() {
