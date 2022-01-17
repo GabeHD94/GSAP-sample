@@ -18,7 +18,7 @@ export default styled.div`
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
     font-size: 1vw;
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 600px) {
       font-size: 3vw;
     
   }
@@ -26,7 +26,7 @@ export default styled.div`
       margin-left: 2vw;
       width: 1vw;
       fill: #94d31b;
-      @media screen and (max-width: 700px) {
+      @media screen and (max-width: 600px) {
       width: 3vw;
     
   }

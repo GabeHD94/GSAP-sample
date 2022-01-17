@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import DualPanelTwo from "../components/shared/dualPanelTwo";
+import DualPanelTwo from "../components/shared/sectionThreePanels";
 import { ThemeProvider } from "styled-components";
 import Map from "../assests/map.png";
 import Porsche from "../assests/porsche-model.png";

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import DualPanel from "../components/shared/dualPanel";
+import DualPanel from "../components/shared/sectionTwoPanels";
 import { ThemeProvider } from "styled-components";
 import Mpg from "../assests/mpg.png"
 import Hp from "../assests/hp.png"

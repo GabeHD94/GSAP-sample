@@ -74,11 +74,11 @@ export default styled.div`
         margin-left: 2vw;
         width: 1vw;
         fill: #94d31b;
-        @media screen and (max-width: 700px) {
+        @media screen and (max-width: 600px) {
           width: 3vw;
         }
       }
-      @media screen and (max-width: 700px) {
+      @media screen and (max-width: 600px) {
         font-size: 3vw;
       }
     }

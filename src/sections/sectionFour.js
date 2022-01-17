@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import DualPanelThree from "../components/shared/dualPanelThree";
+import DualPanelThree from "../components/shared/sectionFourPanels";
 import PorscheFront from "../assests/porsche-front.png";
 import TradeCarPhone from "../assests/tradeCarPhone.png";
 import { ThemeProvider } from "styled-components";

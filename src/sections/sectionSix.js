@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import DualPanelFour from "../components/shared/dualPanelsFour";
+import DualPanelFour from "../components/shared/sectionSixPanels";
 import PorscheFront from "../assests/porsche-front.png";
 import Merc from "../assests/merc.png";
 import ManSmiling from "../assests/touched.png";

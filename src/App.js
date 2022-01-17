@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect} from 'react';
-import Header from './sections/header'
+import Header from './sections/sectionOne'
 import SectionTwo from './sections/sectionTwo'
 import SectionThree from './sections/sectionThree'
 import SectionFour from './sections/sectionFour'

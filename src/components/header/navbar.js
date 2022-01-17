@@ -6,11 +6,11 @@ export default styled.nav`
 
   img {
     width: 15vw;
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 600px) {
       width: 40vw;
     }
   }
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 600px) {
     margin: 3vw 6vw;
   }
 
