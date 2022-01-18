@@ -4,6 +4,7 @@ import HeaderPhone from "../assests/headerphone.png";
 import MerCar from "../assests/merc.png";
 import Porsche from "../assests/porsche.png";
 import a7 from "../assests/a7.png";
+import A7full from "../assests/a7full.png";
 import ArrowRight from "../assests/rightarrow.svg";
 import HeaderStyled from "../components/header/headerStyled";
 import BigHeading from "../components/shared/bigHeadingStyled";
@@ -32,26 +33,20 @@ export default function header() {
                 <p>
                   Avalible On the App
                   <img src={ArrowRight}></img>
-                  
                 </p>
               </section>
-              {/* <HeaderCarWrapper>
-            <div style={{ display: "flex" }}>
-            <img src={a7} style={{ width: "480px", marginTop: "25px" }} />
-            <div style={{ marginTop: "85px", marginLeft: "-50px" }}>
-            <img src={MerCar} style={{ width: "560px", height: "160px" }} />
-            </div>
-            </div>
-            <img
-            src={Porsche}
-            style={{
-              width: "750px",
-              marginTop: "-400px",
-              marginLeft: "70px",
-              marginBottom: "10px",
-            }}
-            />
-          </HeaderCarWrapper> */}
+              <HeaderCarWrapper>
+                <img src={a7} />
+                <div>
+                  <img src={A7full}></img>
+                </div>
+                <section>
+                  <img src={MerCar} />
+                  <div>
+                    <img src={Porsche} />
+                  </div>
+                </section>
+              </HeaderCarWrapper>
             </HeaderStyled>
             <PhoneHeader>
               <img src={HeaderPhone} />

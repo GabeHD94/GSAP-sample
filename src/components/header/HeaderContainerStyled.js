@@ -6,19 +6,20 @@ export default styled.div`
   width: 100%;
   /* height: 80vw; */
   left: 0px;
+  right: 0px;
   top: 0px;
-  margin-bottom: 10vh;
+  margin-bottom: 5vw;
   
   main{
-    height: 43vw;
+    height: 44vw;
     background-color: #fbc843;
 
     @media screen and (max-width: 820px) {
-      /* height:50vw; */
+      height:50vw;
   
     }
     @media screen and (max-width: 600px) {
-      height: 100vw;
+      height: 80vw;
   
     }
 
