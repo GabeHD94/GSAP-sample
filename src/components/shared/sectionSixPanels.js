@@ -153,7 +153,7 @@ export default styled.div`
     }
   }
   @media screen and (max-width: 600px) {
-    margin: 20vw -2px;
+    margin: 0 -2px;
 
     flex-direction: column-reverse;
   }

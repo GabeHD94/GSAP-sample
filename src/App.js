@@ -6,6 +6,8 @@ import SectionThree from './sections/sectionThree'
 import SectionFour from './sections/sectionFour'
 import SectionFive from './sections/sectionFive'
 import SectionSix from './sections/sectionSix'
+import Footer from './sections/footer'
+import Loader from './sections/loader'
 
 
 function App() {
@@ -22,7 +24,7 @@ function App() {
     <div className="App">
         {
           loading ? 
-          <div>loading</div>
+          <Loader/>
           :
           <div>
             <Header/>
@@ -31,6 +33,7 @@ function App() {
             <SectionFour/>
             <SectionFive/>
             <SectionSix/>
+            <Footer/>
 
 
           </div>

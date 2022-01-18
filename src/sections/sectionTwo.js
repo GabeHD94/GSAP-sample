@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useRef, useEffect, useState } from "react";
+import { gsap } from "gsap";
 import DualPanelTwo from "../components/shared/sectionTwoPanels";
 import { ThemeProvider } from "styled-components";
 import Mpg from "../assests/mpg.png";
@@ -6,9 +7,11 @@ import ArrowRight from "../assests/rightarrow.svg";
 import ArrowLeft from "../assests/leftarrow.svg";
 import Rover from "../assests/range-rover.png";
 import PorscheLeft from "../assests/porsche-left.png";
-
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Hp from "../assests/hp.png";
 import ZeroSixty from "../assests/zerosixty.png";
+
+gsap.registerPlugin(ScrollTrigger)
 
 const theme = {
   font: "Bebas Neue",
@@ -16,6 +19,23 @@ const theme = {
 };
 
 export default function SectionTwo() {
+  // const el = useRef();
+  // const q = gsap.utils.selector(el);
+  // const tl = useRef();
+
+  // useEffect(() => {
+  //   tl.current = gsap.timeline()
+
+  //   .from(q(".yellowpanel"), {
+  //     scrollTrigger: ".yellowpanel",
+  //     width: "-20vw",
+  //     duration: .7,
+  //   })
+    
+  // }, []);
+
+
+
   const carStats = [
     {
       make: "PORSCHE",
@@ -39,7 +59,7 @@ export default function SectionTwo() {
   return (
     <ThemeProvider theme={theme}>
       <DualPanelTwo>
-        <section>
+        <section  className="yellowpanel">
           <span>
             <img
               src={ArrowLeft}
@@ -74,7 +94,7 @@ export default function SectionTwo() {
             <h2>{carStats[currentCar].zeroSixty}</h2>
           </div>
           <h3>
-            <img src={carStats[currentCar].img}></img>
+            <img className="car" src={carStats[currentCar].img}></img>
           </h3>
         </section>
 
