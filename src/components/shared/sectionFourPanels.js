@@ -20,7 +20,7 @@ export default styled.div`
       display: flex;
       justify-content: center;
       align-items: center;
-      margin: 1vw 5.8vw 1vw -25vw;
+      margin: 5vw 5.8vw 1vw -25vw;
       width: 78vw;
       height: 125vw;
     }

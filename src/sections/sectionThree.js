@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import DualPanelTwo from "../components/shared/sectionThreePanels";
+import DualPanelThree from "../components/shared/sectionThreePanels";
 import { ThemeProvider } from "styled-components";
 import Map from "../assests/map.png";
 import Porsche from "../assests/porsche-model.png";
@@ -15,7 +15,7 @@ const theme = {
 export default function SectionThree() {
   return (
     <ThemeProvider theme={theme}>
-      <DualPanelTwo>
+      <DualPanelThree>
         <main>
           <h2>Delivered to your Door.</h2>
           <p>
@@ -31,7 +31,7 @@ export default function SectionThree() {
             <img src={Porsche}></img>
           </div>
         </section>
-      </DualPanelTwo>
+      </DualPanelThree>
     </ThemeProvider>
   );
 }

@@ -40,7 +40,7 @@ export default styled.div`
       width: 39vw;
       @media screen and (max-width: 600px) {
           /* max-width: 53%; */
-        margin:-60px;
+        margin-left:-90px;
         width: 60vw;
         /* margin-left: -15vw; */
         margin-top: 18vw;
@@ -58,7 +58,7 @@ export default styled.div`
         @media screen and (max-width: 600px) {
 
           width: 67vw;
-          margin-left: -37vw;
+          margin-left: -40vw;
           margin-top: 18vw;
         }
       }

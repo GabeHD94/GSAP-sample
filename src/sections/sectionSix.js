@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import DualPanelFour from "../components/shared/sectionSixPanels";
+import DualPanelSix from "../components/shared/sectionSixPanels";
 import PorscheFront from "../assests/porsche-front.png";
 import Merc from "../assests/merc.png";
 import ManSmiling from "../assests/touched.png";
@@ -15,7 +15,7 @@ const theme = {
 export default function SectionFour() {
   return (
     <ThemeProvider theme={theme}>
-      <DualPanelFour>
+      <DualPanelSix>
         <section>
           <img src={ManSmiling}></img>
         </section>
@@ -37,7 +37,7 @@ export default function SectionFour() {
             <img src={Merc}></img>
           </div>
         </main>
-      </DualPanelFour>
+      </DualPanelSix>
     </ThemeProvider>
   );
 }

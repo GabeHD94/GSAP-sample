@@ -10,9 +10,13 @@ export default styled.div`
     flex-direction: column;
     align-items: center;
     margin: 10vw 5.8vw;
-    height: 45vw;
-    width: 40vw;
+    height: 42vw;
+    width: 32vw;
     background-color: #fbc843;
+
+    img {
+      margin-left: 10vw;
+    }
 
     span {
       display: flex;
@@ -32,7 +36,7 @@ export default styled.div`
       font-size: 1vw;
     }
     div {
-      margin: 0 10vw;
+      margin: 0;
 
       display: flex;
       flex-direction: row;
@@ -41,8 +45,8 @@ export default styled.div`
 
       img {
         /* margin: 0 2%; */
-      /* width: 4vw; */
-      height: 1.5vw;
+        /* width: 4vw; */
+        height: 1.5vw;
       }
       h2 {
         width: 2vw;
@@ -59,37 +63,53 @@ export default styled.div`
       font-weight: 200;
       margin: 0 10vw;
     }
+    h3 {
+      img {
+        margin-top: -2vh;
+        width: 40vw;
+      }
+    }
 
     @media screen and (max-width: 600px) {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      /* margin: 1vw 5.8vw; */
-      padding-right: 0px;
-
       width: 90vw;
-      height: 110vw;
+      height: 80vw;
+      justify-content: flex-start;
+      align-items: center;
+      padding-right: 0px;
       h1 {
-        font-size: 7vw;
-        font-weight: 200;
-        margin: 0 10vw;
-      }
-      h2 {
-        font-size: 5vw;
-      }
-      p {
-        margin: 0 10vw 2vh 10vw;
-        color: #4b5168;
-        font-size: 2.7vw;
+        font-size: 10vw;
+        width: 40vw;
+        margin-top: -19vw; 
       }
       div {
         img {
-          margin-right: 9vw;
-
-          height: 30%;
-          width: 16%;
+          width: 11vw;
+          height:4vw;
+          margin-right: 20px;
+        }
+        h2 {
+          /* display: flex; */
+          margin: 2vw;
+          font-size: 6vw;
         }
       }
+      p {
+        font-size: 4vw;
+        margin-bottom: 4vw;
+      }
+      span {
+        img {
+          margin-top: 9vw;
+          width: 5vw;
+        }
+      }
+      h3 {
+      img {
+        margin-top: 1vh;
+        margin-left: 0vh;
+        width: 90vw;
+      }
+    }
     }
   }
 
@@ -139,8 +159,10 @@ export default styled.div`
         font-size: 1.5vw;
         line-height: 20px;
         @media screen and (max-width: 600px) {
-          width: 80vw;
-          font-size: 3vw;
+          width: 90vw;
+          line-height: 6vw;
+
+          font-size: 3.9vw;
         }
       }
     }

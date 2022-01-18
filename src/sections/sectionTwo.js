@@ -1,9 +1,11 @@
 import React, { useState } from "react";
-import DualPanel from "../components/shared/sectionTwoPanels";
+import DualPanelTwo from "../components/shared/sectionTwoPanels";
 import { ThemeProvider } from "styled-components";
 import Mpg from "../assests/mpg.png";
 import ArrowRight from "../assests/rightarrow.svg";
 import ArrowLeft from "../assests/leftarrow.svg";
+import Rover from "../assests/range-rover.png";
+import PorscheLeft from "../assests/porsche-left.png";
 
 import Hp from "../assests/hp.png";
 import ZeroSixty from "../assests/zerosixty.png";
@@ -21,6 +23,7 @@ export default function SectionTwo() {
       mpg: " 19/24",
       hp: "443",
       zeroSixty: "3.2",
+      img: PorscheLeft,
     },
     {
       make: "LAND ROVER",
@@ -28,13 +31,14 @@ export default function SectionTwo() {
       mpg: " 25/29",
       hp: "247",
       zeroSixty: "6.4 ",
+      img: Rover,
     },
   ];
 
   const [currentCar, setCurrentCar] = useState(0);
   return (
     <ThemeProvider theme={theme}>
-      <DualPanel>
+      <DualPanelTwo>
         <section>
           <span>
             <img
@@ -55,20 +59,23 @@ export default function SectionTwo() {
               }}
             ></img>
           </span>
-            <h1>{carStats[currentCar].make}</h1>
-            <p>{carStats[currentCar].model}</p>
-            <div>
-              <img src={Mpg}></img>
-              <h2>{carStats[currentCar].mpg}</h2>
-            </div>
-            <div>
-              <img src={Hp}></img>
-              <h2>{carStats[currentCar].hp}</h2>
-            </div>
-            <div>
-              <img src={ZeroSixty}></img>
-              <h2>{carStats[currentCar].zeroSixty}</h2>
-            </div>
+          <h1>{carStats[currentCar].make}</h1>
+          <p>{carStats[currentCar].model}</p>
+          <div>
+            <img src={Mpg}></img>
+            <h2>{carStats[currentCar].mpg}</h2>
+          </div>
+          <div>
+            <img src={Hp}></img>
+            <h2>{carStats[currentCar].hp}</h2>
+          </div>
+          <div>
+            <img src={ZeroSixty}></img>
+            <h2>{carStats[currentCar].zeroSixty}</h2>
+          </div>
+          <h3>
+            <img src={carStats[currentCar].img}></img>
+          </h3>
         </section>
 
         <main>
@@ -79,7 +86,7 @@ export default function SectionTwo() {
             wanted to own.
           </p>
         </main>
-      </DualPanel>
+      </DualPanelTwo>
     </ThemeProvider>
   );
 }

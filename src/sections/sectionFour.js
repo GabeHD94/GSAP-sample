@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import DualPanelThree from "../components/shared/sectionFourPanels";
+import DualPanelFour from "../components/shared/sectionFourPanels";
 import PorscheFront from "../assests/porsche-front.png";
 import TradeCarPhone from "../assests/tradeCarPhone.png";
 import { ThemeProvider } from "styled-components";
@@ -13,7 +13,7 @@ const theme = {
 export default function SectionFour() {
   return (
     <ThemeProvider theme={theme}>
-      <DualPanelThree>
+      <DualPanelFour>
         <section>
           <img src={PorscheFront}></img>
           <div>
@@ -28,7 +28,7 @@ export default function SectionFour() {
             else in our luxurious inventory. Nothing says “June” like a new car!
           </p>
         </main>
-      </DualPanelThree>
+      </DualPanelFour>
     </ThemeProvider>
   );
 }
