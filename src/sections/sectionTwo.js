@@ -1,14 +1,16 @@
 import React, { useState } from "react";
 import DualPanel from "../components/shared/sectionTwoPanels";
 import { ThemeProvider } from "styled-components";
-import Mpg from "../assests/mpg.png"
-import Hp from "../assests/hp.png"
-import ZeroSixty from "../assests/zerosixty.png"
+import Mpg from "../assests/mpg.png";
+import ArrowRight from "../assests/rightarrow.svg";
+import ArrowLeft from "../assests/leftarrow.svg";
+
+import Hp from "../assests/hp.png";
+import ZeroSixty from "../assests/zerosixty.png";
 
 const theme = {
   font: "Bebas Neue",
   hTwosize: "6vw",
-
 };
 
 export default function SectionTwo() {
@@ -30,32 +32,43 @@ export default function SectionTwo() {
   ];
 
   const [currentCar, setCurrentCar] = useState(0);
-  const handleAarowButton = () => {
-    const nextCar = 1;
-    if (nextCar == 1) {
-      nextCar = 0;
-    }
-    setCurrentCar(nextCar);
-  };
   return (
     <ThemeProvider theme={theme}>
       <DualPanel>
-        {/* <button onClick={handleAarowButton}>fdsfdsf</button> */}
         <section>
-          <h1>{carStats[currentCar].make}</h1>
-          <p>{carStats[currentCar].model}</p>
-          <div>
-            <img src={Mpg}></img>
-            <h2>{carStats[currentCar].mpg}</h2>
-          </div>
-          <div>
-            <img  src={Hp}></img>
-            <h2>{carStats[currentCar].hp}</h2>
-          </div>
-          <div>
-            <img  src={ZeroSixty}></img>
-            <h2>{carStats[currentCar].zeroSixty}</h2>
-          </div>
+          <span>
+            <img
+              src={ArrowLeft}
+              onClick={() => {
+                currentCar > 0
+                  ? setCurrentCar(currentCar - 1)
+                  : setCurrentCar(currentCar + 1);
+              }}
+            ></img>
+
+            <img
+              src={ArrowRight}
+              onClick={() => {
+                currentCar < carStats.length - 1
+                  ? setCurrentCar(currentCar + 1)
+                  : setCurrentCar(currentCar - 1);
+              }}
+            ></img>
+          </span>
+            <h1>{carStats[currentCar].make}</h1>
+            <p>{carStats[currentCar].model}</p>
+            <div>
+              <img src={Mpg}></img>
+              <h2>{carStats[currentCar].mpg}</h2>
+            </div>
+            <div>
+              <img src={Hp}></img>
+              <h2>{carStats[currentCar].hp}</h2>
+            </div>
+            <div>
+              <img src={ZeroSixty}></img>
+              <h2>{carStats[currentCar].zeroSixty}</h2>
+            </div>
         </section>
 
         <main>

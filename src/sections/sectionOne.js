@@ -4,7 +4,7 @@ import HeaderPhone from "../assests/headerphone.png";
 import MerCar from "../assests/merc.png";
 import Porsche from "../assests/porsche.png";
 import a7 from "../assests/a7.png";
-import A7full from "../assests/a7full.png";
+import A7full from "../assests/audi-a7.png";
 import ArrowRight from "../assests/rightarrow.svg";
 import HeaderStyled from "../components/header/headerStyled";
 import BigHeading from "../components/shared/bigHeadingStyled";

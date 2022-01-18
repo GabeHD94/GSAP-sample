@@ -2,54 +2,73 @@ import styled from "styled-components";
 
 export default styled.div`
   display: flex;
-  /* padding: 20vh 5.8vw; */
 
   section {
     font-family: ${(props) => props.theme.font};
-    display: flex;
-    justify-content: center;
+    /* display: flex; */
+    /* justify-content: center; */
     flex-direction: column;
-    /* align-items: center; */
+    align-items: center;
     margin: 10vw 5.8vw;
-    width: 30vw;
-    height: 40vw;
+    height: 45vw;
+    width: 40vw;
     background-color: #fbc843;
+
+    span {
+      display: flex;
+      justify-content: flex-end;
+      flex-direction: row;
+      margin: 0vh 10px 5vw;
+
+      img {
+        width: 2vw;
+        margin: 20px 10px;
+      }
+    }
+
+    p {
+      color: #4b5168;
+      margin: 0 0 1vw 10vw;
+      font-size: 1vw;
+    }
+    div {
+      margin: 0 10vw;
+
+      display: flex;
+      flex-direction: row;
+      /* justify-content: space-between; */
+      align-items: center;
+
+      img {
+        /* margin: 0 2%; */
+      /* width: 4vw; */
+      height: 1.5vw;
+      }
+      h2 {
+        width: 2vw;
+        margin-left: 2vw;
+        font-size: 2vw;
+        font-weight: 200;
+        /* margin: 0 10vw; */
+      }
+    }
+
     h1 {
+      width: 12vw;
       font-size: 3vw;
       font-weight: 200;
       margin: 0 10vw;
     }
-    p {
-      margin: 0 10vw 2vh 10vw;
-      color: #4b5168;
-      font-size: 0.8vw;
-    }
-    div {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      margin: 0 10vw;
-      img {
-        margin-right: 2vw;
-        height: 30%;
-        width: 45%;
-      }
-    }
-    h2 {
-      color: black;
-      font-size: 1.5vw;
-      font-weight: 500;
-    }
+
     @media screen and (max-width: 600px) {
       display: flex;
-      /* justify-content: center; */
-      /* align-items: center; */
-      /* margin: 0 50%; */
-      /* margin:5vw; */
-      margin: 1vw 5.8vw;
+      justify-content: center;
+      align-items: center;
+      /* margin: 1vw 5.8vw; */
+      padding-right: 0px;
 
-      width: 88.3vw;
-      height: 40vh;
+      width: 90vw;
+      height: 110vw;
       h1 {
         font-size: 7vw;
         font-weight: 200;
