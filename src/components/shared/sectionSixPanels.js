@@ -149,7 +149,6 @@ export default styled.div`
       opacity: 0.4;
 
       }
-      /* margin-bottom: 0; */
     }
     @media screen and (max-width: 600px) {
       margin: 10vw 5vw 10vw 10vw;

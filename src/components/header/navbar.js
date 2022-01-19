@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export default styled.nav`
   margin: 3vh 6vw;
-  /* width: 100%; */
 
   img {
     width: 15vw;
@@ -15,7 +14,6 @@ export default styled.nav`
   }
 
   @media screen and (max-width: 390px) {
-    /* margin: 3vw 6vw; */
 
     width: 20px;
   }

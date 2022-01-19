@@ -6,7 +6,6 @@ export default styled.h1`
 
   font-family: "Bebas Neue";
   font-weight: 300;
-  /* margin: 90px 0; */
   font-size: 9vw;
   line-height: 8vw;
   color: white;

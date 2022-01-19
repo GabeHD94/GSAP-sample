@@ -4,7 +4,6 @@ export default styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  /* height: 80vw; */
   left: 0px;
   right: 0px;
   top: 0px;

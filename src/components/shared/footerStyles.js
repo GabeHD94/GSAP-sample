@@ -37,7 +37,6 @@ export default styled.nav`
 
   img {
     @media screen and (max-width: 600px) {
-      /* width: 40vw; */
       margin: 30px 0;
     }
   }

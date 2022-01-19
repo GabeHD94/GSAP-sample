@@ -60,11 +60,9 @@ export default styled.div`
     h2 {
       margin: 5vw 5vw 2vw 0;
 
-      /* font-family: "Bebas Neue"; */
       font-weight: 300;
       font-size: ${(props) => props.theme.hTwosize};
 
-      /* font-size: 5vw; */
       line-height: 5vw;
       letter-spacing: -1px;
       color: #2b3144;

@@ -10,7 +10,6 @@ export default styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    /* flex-direction: column; */
     margin: 10vw 7vw 10vw 0px;
     width: 35vw;
     height: 50vw;

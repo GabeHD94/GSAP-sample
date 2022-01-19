@@ -5,8 +5,6 @@ export default styled.div`
 
   section {
     font-family: ${(props) => props.theme.font};
-    /* display: flex; */
-    /* justify-content: center; */
     flex-direction: column;
     align-items: center;
     margin: 10vw 5.8vw;
@@ -40,12 +38,9 @@ export default styled.div`
 
       display: flex;
       flex-direction: row;
-      /* justify-content: space-between; */
       align-items: center;
 
       img {
-        /* margin: 0 2%; */
-        /* width: 4vw; */
         height: 1.5vw;
       }
       h2 {
@@ -53,7 +48,6 @@ export default styled.div`
         margin-left: 2vw;
         font-size: 2vw;
         font-weight: 200;
-        /* margin: 0 10vw; */
       }
     }
 
@@ -88,7 +82,6 @@ export default styled.div`
           margin-right: 20px;
         }
         h2 {
-          /* display: flex; */
           margin: 2vw;
           font-size: 6vw;
         }
@@ -117,7 +110,6 @@ export default styled.div`
     font-family: ${(props) => props.theme.font};
     display: flex;
     justify-content: center;
-    /* align-items: center; */
     flex-direction: column;
     margin: 100px 5.8vw;
     width: 50vw;
@@ -174,6 +166,5 @@ export default styled.div`
     flex-direction: column-reverse;
     margin: 20vw -1px;
 
-    /* width: 100%; */
   }
 `;

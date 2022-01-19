@@ -18,7 +18,6 @@ export default styled.div`
     margin: 1%;
     background-color: #f5f5f7;
     @media screen and (max-width: 600px) {
-      /* width: 100%; */
       width: 100vw;
       height: 100vw;
     }
@@ -27,7 +26,6 @@ export default styled.div`
       flex-direction: column;
       margin: 15px;
       align-items: flex-start;
-      /* justify-content: flex-start; */
       width: 65%;
     }
     h2 {
@@ -39,7 +37,6 @@ export default styled.div`
       font-weight: 200;
       margin: 0;
       color: #2b3144;
-      /* width: 65%; */
       @media screen and (max-width: 600px) {
         font-size: 8vw;
         margin: 0;
@@ -61,12 +58,10 @@ export default styled.div`
       align-items: center;
       font-family: "Roboto", sans-serif;
       font-weight: bolder;
-      /* width: 65%; */
       @media screen and (max-width: 600px) {
         font-size: 3vw;
         margin: 8% 0;
 
-        /* width: 60vw; */
         line-height: 6vw;
       }
     }
