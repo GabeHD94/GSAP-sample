@@ -12,7 +12,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Power3 } from "gsap";
 import { gsap } from "gsap";
 
-
 gsap.registerPlugin(ScrollTrigger);
 
 const theme = {
@@ -23,46 +22,57 @@ const theme = {
 export default function SectionTwo() {
   let tl = new gsap.timeline({
     repeat: 0,
-
   });
 
   useEffect(() => {
-    tl.from(".yellowpanel", { 
+    tl.from(".yellowpanel", {
       duration: 0.4,
       scaleX: 0,
       transformOrigin: "right",
     });
 
-    tl.from(".stats", { 
-      duration: 0.1,
-      opacity: 0,
-      transformOrigin: "right", 
-    }, 0.5); 
+    tl.from(
+      ".stats",
+      {
+        duration: 0.1,
+        opacity: 0,
+        transformOrigin: "right",
+      },
+      0.5
+    );
 
-    tl.from(".car", {  
-      ease: Power3.easeOut, delay: 0.1,  
-      opacity: 0,
-      x: "600px",
-    }, 0.3); 
+    tl.from(
+      ".car",
+      {
+        ease: Power3.easeOut,
+        delay: 0.1,
+        opacity: 0,
+        x: "600px",
+      },
+      0.3
+    );
 
-    
-    tl.from(".sec2title", {  
-      opacity: 0,
-      y: "-100px", 
-      ease: Power3.easeOut, delay: 0.1,
-    }, 0.3); 
+    tl.from(
+      ".sec2title",
+      {
+        opacity: 0,
+        y: "-100px",
+        ease: Power3.easeOut,
+        delay: 0.1,
+      },
+      0.3
+    );
 
-    tl.from(".sec2parag", {  
-      opacity: 0, 
-      y: "-100px",  
-      ease: Power3.easeOut, delay: 0.1,  
-
-    }, 0.5); 
-
-
-
-
-
+    tl.from(
+      ".sec2parag",
+      {
+        opacity: 0,
+        y: "-100px",
+        ease: Power3.easeOut,
+        delay: 0.1,
+      },
+      0.5
+    );
   }, []);
 
   const carStats = [
@@ -85,12 +95,15 @@ export default function SectionTwo() {
   ];
 
   const [currentCar, setCurrentCar] = useState(0);
+
+
   return (
     <ThemeProvider theme={theme}>
       <DualPanelTwo>
         <section className="yellowpanel">
           <span>
             <img
+              id="button"
               src={ArrowLeft}
               className="stats"
               onClick={() => {
@@ -98,7 +111,7 @@ export default function SectionTwo() {
                   ? setCurrentCar(currentCar - 1)
                   : setCurrentCar(currentCar + 1);
               }}
-            ></img> 
+            ></img>
 
             <img
               src={ArrowRight}
@@ -110,6 +123,7 @@ export default function SectionTwo() {
               }}
             ></img>
           </span>
+
           <h1 className="stats">{carStats[currentCar].make}</h1>
           <p className="stats">{carStats[currentCar].model}</p>
           <div className="stats">
@@ -124,6 +138,7 @@ export default function SectionTwo() {
             <img className="stats" src={ZeroSixty}></img>
             <h2 className="stats">{carStats[currentCar].zeroSixty}</h2>
           </div>
+
           <h3>
             <img className="car" src={carStats[currentCar].img}></img>
           </h3>

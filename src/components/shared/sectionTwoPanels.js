@@ -59,6 +59,7 @@ export default styled.div`
     }
     h3 {
       img {
+        animation:fadeOut 1s linear;
         margin-top: -2vh;
         width: 40vw;
       }
