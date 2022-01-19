@@ -45,7 +45,7 @@ export default function SectionFour() {
       ease: Power3.easeOut, delay: 0.7,  
   
     }, 0.5); 
-   tl.from(".carPanelfromlef4", {  
+   tl.from(".carPanelfromleft4", {  
       ease: Power3.easeOut, delay: 0.3,  
       opacity: 0,
       x: "-400px", 

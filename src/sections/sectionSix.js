@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import DualPanelSix from "../components/shared/sectionSixPanels";
-import PorscheFront from "../assests/porsche-front.png";
 import Merc from "../assests/merc.png";
 import ManSmiling from "../assests/touched.png";
 import ArrowRight from "../assests/rightarrow.svg";
@@ -76,7 +75,7 @@ export default function SectionFour() {
             “With Eleanor I was able to drive 2 of my dream cars this year! The
             process is always easy and affordable!”
             <span>Alex Bateman, Interface Designer</span>
-            <hr></hr>
+            {/* <hr></hr> */}
           </p>
 
           <span>

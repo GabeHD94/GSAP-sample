@@ -4,6 +4,7 @@ export default styled.nav`
   hr {
     height: 1px;
     margin-top: 3vw;
+    opacity: 0.1;
     width: 84vw;
     background-color: #a3a3a3;
     border: none;
@@ -38,6 +39,8 @@ export default styled.nav`
   img {
     @media screen and (max-width: 600px) {
       margin: 30px 0;
+      width: 40vw;
+
     }
   }
 
