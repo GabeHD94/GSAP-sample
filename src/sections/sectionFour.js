@@ -56,9 +56,9 @@ export default function SectionFour() {
     <ThemeProvider theme={theme}>
       <DualPanelFour>
         <section className="carPanelfromleft4">
-          <img src={PorscheFront}></img>
+          <img alt="porf" src={PorscheFront}></img>
           <div>
-            <img className="phoneInventory" src={TradeCarPhone}></img>
+            <img alt="phoneinv" className="phoneInventory" src={TradeCarPhone}></img>
           </div>
         </section>
 

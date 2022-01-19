@@ -67,9 +67,9 @@ export default function SectionThree() {
         </main>
 
         <section>
-          <img className="mapapp" src={MapPath}></img>
+          <img alt="mapapps" className="mapapp" src={MapPath}></img>
           <div>
-            <img className="carfromleft3" src={Porsche}></img>
+            <img alt="car3" className="carfromleft3" src={Porsche}></img>
           </div>
         </section>
       </DualPanelThree>

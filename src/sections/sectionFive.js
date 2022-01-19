@@ -60,7 +60,7 @@ export default function SectionFive() {
     <ThemeProvider theme={theme}>
       <DualPanelFive>
         <section className="triPanel1">
-          <img src={CoinPrice}></img>
+          <img alt="coin" src={CoinPrice}></img>
           <div>
             <h2>SIMPLE MONTHLY PRICING</h2>
             <p>
@@ -69,7 +69,7 @@ export default function SectionFive() {
           </div>
         </section>
         <section  className="triPanel2">
-          <img src={Insurance}></img>
+          <img alt="insurance" src={Insurance}></img>
           <div>
             <h2>VEHICLE INSURANCE INCLUDED</h2>
             <p>
@@ -79,8 +79,8 @@ export default function SectionFive() {
           </div>
         </section>
         <section  className="triPanel3">
-          <img src={Maintenance}></img>
-          <img src={Oval}></img>
+          <img alt="maintain" src={Maintenance}></img>
+          <img alt="shade" src={Oval}></img>
           <div>
             <h2>MAINTENANCE IS COVERED</h2>
             <p>

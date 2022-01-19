@@ -30,10 +30,10 @@ export default function Loader() {
 
   return (
     <LoaderStyles>
-      <img src={LoaderOval}></img>
-      <img src={LoaderCrown}></img>
+      <img alt="oval" src={LoaderOval}></img>
+      <img alt="crown" src={LoaderCrown}></img>
       <section className="loaddot">
-        <img src={LoaderDot}></img>
+        <img alt="dot" src={LoaderDot}></img>
       </section>
     </LoaderStyles>
   );

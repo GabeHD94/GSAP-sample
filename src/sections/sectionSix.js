@@ -67,7 +67,7 @@ export default function SectionFour() {
     <ThemeProvider theme={theme}>
       <DualPanelSix>
         <section className="yellowpanel6">
-          <img className="man6" src={ManSmiling}></img>
+          <img alt="handsome" className="man6" src={ManSmiling}></img>
         </section>
         <main className="text6">
           <h2>Customers with that new car smell</h2>
@@ -80,10 +80,10 @@ export default function SectionFour() {
 
           <span>
             Avalible On the App
-            <img src={ArrowRight}></img>
+            <img alt="arrow6" src={ArrowRight}></img>
           </span>
           <div className="carfromleft6">
-            <img src={Merc}></img>
+            <img alt="marc6" src={Merc}></img>
           </div>
         </main>
       </DualPanelSix>

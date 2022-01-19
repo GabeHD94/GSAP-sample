@@ -7,7 +7,7 @@ export default function footer() {
       <FooterBar>
         <hr></hr>
       <div>
-        <img src={EleanorBlack} />
+        <img alt="elblack" src={EleanorBlack} />
       <section>
         <p>About Us</p>
         <p>Terms of Use</p>

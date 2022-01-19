@@ -83,7 +83,7 @@ export default function Header() {
       <HeaderContainerStyled>
         <main className="yellowback">
           <NavBar>
-            <img src={CrownEleanor} />
+            <img alt="celeanor" src={CrownEleanor} />
           </NavBar>
           <HeadContainer>
             <HeaderStyled>
@@ -93,24 +93,24 @@ export default function Header() {
                 </BigHeading>
                 <p className="onapp">
                   Avalible On the App
-                  <img src={ArrowRight}></img>
+                  <img alt="arrow1r" src={ArrowRight}></img>
                 </p>
               </section>
               <HeaderCarWrapper className="sec1cars">
-                <img src={a7} />
+                <img alt="a71" src={a7} />
                 <div>
-                  <img src={A7full}></img>
+                  <img alt="a7f" src={A7full}></img>
                 </div>
                 <section>
-                  <img src={MerCar} />
+                  <img alt="mer" src={MerCar} />
                   <div>
-                    <img src={Porsche} />
+                    <img alt="por" src={Porsche} />
                   </div>
                 </section>
               </HeaderCarWrapper>
             </HeaderStyled>
             <PhoneHeader className="phonehead">
-              <img src={HeaderPhone} />
+              <img alt="phone1" src={HeaderPhone} />
             </PhoneHeader>
           </HeadContainer>
         </main>

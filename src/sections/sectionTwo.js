@@ -102,7 +102,7 @@ export default function SectionTwo() {
       <DualPanelTwo>
         <section className="yellowpanel">
           <span>
-            <img
+            <img alt="arrowl2"
               id="button"
               src={ArrowLeft}
               className="stats"
@@ -113,7 +113,7 @@ export default function SectionTwo() {
               }}
             ></img>
 
-            <img
+            <img alt="arrowr2"
               src={ArrowRight}
               className="stats"
               onClick={() => {
@@ -127,20 +127,20 @@ export default function SectionTwo() {
           <h1 className="stats">{carStats[currentCar].make}</h1>
           <p className="stats">{carStats[currentCar].model}</p>
           <div className="stats">
-            <img className="stats" src={Mpg}></img>
+            <img alt="mpgs" className="stats" src={Mpg}></img>
             <h2 className="stats">{carStats[currentCar].mpg}</h2>
           </div>
           <div className="stats">
-            <img className="stats" src={Hp}></img>
+            <img alt="hps" className="stats" src={Hp}></img>
             <h2 className="stats">{carStats[currentCar].hp}</h2>
           </div>
           <div className="stats">
-            <img className="stats" src={ZeroSixty}></img>
+            <img alt="06s" className="stats" src={ZeroSixty}></img>
             <h2 className="stats">{carStats[currentCar].zeroSixty}</h2>
           </div>
 
           <h3>
-            <img className="car" src={carStats[currentCar].img}></img>
+            <img alt="statcar" className="car" src={carStats[currentCar].img}></img>
           </h3>
         </section>
 
