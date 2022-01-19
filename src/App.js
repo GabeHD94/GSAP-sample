@@ -8,6 +8,10 @@ import SectionFive from './sections/sectionFive'
 import SectionSix from './sections/sectionSix'
 import Footer from './sections/footer'
 import Loader from './sections/loader'
+// import { gsap } from "gsap";
+// import { ScrollTrigger } from "gsap/ScrollTrigger";
+// gsap.registerPlugin(ScrollTrigger);
+
 
 
 function App() {
@@ -20,6 +24,20 @@ function App() {
     }, 1000);
   }, [])
 
+  // useEffect(() => {
+  //   gsap.from (".sectiontwo", {
+  //     scrollTrigger: {
+  //       trigger: ".sectiontwo",
+  //       start: "bottom 90%",
+  //       // end: "bottom 60%",
+  //       // markers:true,
+  //     }
+  //   })
+
+  // });
+
+  
+
   return (
     <div className="App">
         {
@@ -27,16 +45,15 @@ function App() {
           <Loader/>
           :
           <div>
-            <Header/>
+            <Header />
             <SectionTwo/>
             <SectionThree/>
             <SectionFour/>
             <SectionFive/>
             <SectionSix/>
             <Footer/>
-
-
           </div>
+
         }
     </div>
   );
