@@ -5,7 +5,7 @@ import TradeCarPhone from "../assests/tradeCarPhone.png";
 import { ThemeProvider } from "styled-components";
 
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { Power3, TimelineLite } from "gsap";
+import { Power3} from "gsap";
 import { gsap } from "gsap";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -45,7 +45,7 @@ export default function SectionFour() {
       ease: Power3.easeOut, delay: 0.7,  
   
     }, 0.5); 
-   tl.from(".carPanelfromleft", {  
+   tl.from(".carPanelfromlef4", {  
       ease: Power3.easeOut, delay: 0.3,  
       opacity: 0,
       x: "-400px", 
@@ -55,7 +55,7 @@ export default function SectionFour() {
   return (
     <ThemeProvider theme={theme}>
       <DualPanelFour>
-        <section className="carPanelfromleft">
+        <section className="carPanelfromleft4">
           <img src={PorscheFront}></img>
           <div>
             <img className="phoneInventory" src={TradeCarPhone}></img>

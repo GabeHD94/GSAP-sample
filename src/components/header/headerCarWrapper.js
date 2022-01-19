@@ -4,7 +4,6 @@ export default styled.div`
   display: flex;
   justify-content: flex-start;
   margin: 0;
-  /* overflow-y: scroll; */
   //A7
   img {
     margin-top: 3vw;
@@ -13,7 +12,6 @@ export default styled.div`
       display: none;
       width: 55vw;
       margin-left: vw;
-      /* margin-top: 15vw; */
     }
   }
 
@@ -24,7 +22,6 @@ export default styled.div`
       @media screen and (max-width: 600px) {
         display: unset;
         width: 50vw;
-        /* margin-left: vw; */
         margin-top: 11vw;
       }
     }
@@ -39,12 +36,9 @@ export default styled.div`
       margin-top: 7.5vw;
       width: 39vw;
       @media screen and (max-width: 600px) {
-          /* max-width: 53%; */
-        margin-left:-90px;
+        margin-left:-60px;
         width: 60vw;
-        /* margin-left: -15vw; */
         margin-top: 18vw;
-        /* overflow: hidden; */
       }
     }
     //porsche

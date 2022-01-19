@@ -10,10 +10,13 @@ export default styled.nav`
   }
   div {
     margin: 0 8vw 5vw 8vw;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  img{
+    width: 10vw;
   }
 
   section {

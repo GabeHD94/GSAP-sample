@@ -1,6 +1,4 @@
-import React, { useRef, useEffect} from "react";
-import { gsap } from "gsap";
-
+import React, { useEffect } from "react";
 import CrownEleanor from "../assests/eleanor.png";
 import HeaderPhone from "../assests/headerphone.png";
 import MerCar from "../assests/merc.png";
@@ -14,45 +12,74 @@ import NavBar from "../components/header/navbar";
 import HeaderContainerStyled from "../components/header/HeaderContainerStyled";
 import HeadContainer from "../components/header/headContainer";
 import PhoneHeader from "../components/header/phoneheader";
-
 import HeaderCarWrapper from "../components/header/headerCarWrapper";
 
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { Power3 } from "gsap";
+import { gsap } from "gsap";
+gsap.registerPlugin(ScrollTrigger);
+
 export default function Header() {
-  const el = useRef();
-  const q = gsap.utils.selector(el);
-  const tl = useRef();
+  let tl = new gsap.timeline({
+    repeat: 0,
+  });
 
   useEffect(() => {
-    tl.current = gsap
-      .timeline()
-      .from(q(".yellowback, .sec1cars"), {
+    tl.from(".yellowback", {
+      ease: Power3.easeOut,
+      delay: 0.1,
+      x: "-100vw",
+    });
+
+    tl.from(
+      ".sec1cars",
+      {
+        ease: Power3.easeOut,
+        delay: 0.1,
         x: "-100vw",
-        duration: 0.5,
-      })
+      },
+      0.1
+    );
 
-
-      .from(q(".headingTitle, .onapp"), {
+    tl.from(
+      ".headingTitle",
+      {
         y: "-10vw",
         opacity: 0,
-        duration: 0.5,
-      })
+      },
+      0.3
+    );      
 
-      .from(q(".phonehead"), {
+    tl.from(
+      ".onapp",
+      {
+        y: "-10vw",
+        opacity: 0,
+      },    
+      0.5
+    );
+
+    tl.from( 
+      ".phonehead",
+      { 
         x: "10vw",
         opacity: 0,
-        duration: 0.5,
-        delay:0,
-      })
+        delay: 0,
+      },
+      0.5
+    );
 
-      .to(q(".headingTitle"), {
+    tl.to(
+      ".headingTitle",
+      {
         y: 0,
         opacity: 1,
-        duration: 0.5,
-      })
-
+      },
+      0.5
+    );
   }, []);
   return (
-    <div ref={el}>
+    <div>
       <HeaderContainerStyled>
         <main className="yellowback">
           <NavBar>

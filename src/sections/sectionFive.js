@@ -25,55 +25,41 @@ export default function SectionFive() {
 
   useEffect(() => {
     tl.from(
-      ".mapapp",
+      ".triPanel1",
       {
-        ease: Power3.easeOut,
-        delay: 0.1,
-        opacity: 0,
-        x: "300px",
-        toggleActions: "restart none none none",
-      },
+        opacity: 0, 
+        y: "-100px", 
+        ease: Power3.easeOut, delay: 0.1,
+      }, 
       0.3
     );
 
     tl.from(
-      ".sec3title",
+      ".triPanel2",
       {
-        opacity: 0,
-        y: "-100px",
-        ease: Power3.easeOut,
-        delay: 0.1,
-      },
+        opacity: 0, 
+        y: "-100px", 
+        ease: Power3.easeOut, delay: 0.3,
+      }, 
       0.3
     );
 
     tl.from(
-      ".sec3parag",
+      ".triPanel3",
       {
-        opacity: 0,
-        y: "-100px",
-        ease: Power3.easeOut,
-        delay: 0.1,
-      },
-      0.5
-    );
-    tl.from(
-      ".carfromleft",
-      {
-        ease: Power3.easeOut,
-        delay: 0.3,
-        opacity: 0,
-        x: "-400px",
-        toggleActions: "restart none none none",
-      },
+        opacity: 0, 
+        y: "-100px", 
+        ease: Power3.easeOut, delay: 0.4,
+      }, 
       0.3
     );
+
   }, []);
 
-  return (
+  return ( 
     <ThemeProvider theme={theme}>
       <DualPanelFive>
-        <section>
+        <section className="triPanel1">
           <img src={CoinPrice}></img>
           <div>
             <h2>SIMPLE MONTHLY PRICING</h2>
@@ -82,7 +68,7 @@ export default function SectionFive() {
             </p>
           </div>
         </section>
-        <section>
+        <section  className="triPanel2">
           <img src={Insurance}></img>
           <div>
             <h2>VEHICLE INSURANCE INCLUDED</h2>
@@ -92,7 +78,7 @@ export default function SectionFive() {
             </p>
           </div>
         </section>
-        <section>
+        <section  className="triPanel3">
           <img src={Maintenance}></img>
           <img src={Oval}></img>
           <div>

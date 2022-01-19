@@ -43,7 +43,6 @@ export default function SectionTwo() {
       ease: Power3.easeOut, delay: 0.1,  
       opacity: 0,
       x: "600px",
-      toggleActions: "restart none none none",  
     }, 0.3); 
 
     

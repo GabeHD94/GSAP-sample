@@ -142,9 +142,12 @@ export default styled.div`
       width: 23vw;
       height: 5px;
       border: none;
+      opacity: 0.3;
       background-color: #f4f4f5;
       @media screen and (max-width: 600px) {
         width: 20vh;
+      opacity: 0.4;
+
       }
       /* margin-bottom: 0; */
     }
@@ -153,7 +156,7 @@ export default styled.div`
     }
   }
   @media screen and (max-width: 600px) {
-    margin: 0 -2px;
+    margin: 40px -2px;
 
     flex-direction: column-reverse;
   }
