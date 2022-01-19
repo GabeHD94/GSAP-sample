@@ -17,11 +17,11 @@ const theme = {
 };
 
 export default function SectionFour() {
-  let tl = new gsap.timeline({
-    repeat: 0,
-  });
-
+  
   useEffect(() => {
+    let tl = new gsap.timeline({
+      repeat: 0,
+    });
 
     tl.from(".yellowpanel6", { 
       duration: 0.3,

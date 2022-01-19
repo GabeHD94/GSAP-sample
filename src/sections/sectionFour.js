@@ -18,13 +18,13 @@ const theme = {
 
 export default function SectionFour() {
 
-  let tl = new gsap.timeline({
-
-    repeat: 0, 
-
-  }); 
   
   useEffect(() => {
+    let tl = new gsap.timeline({
+  
+      repeat: 0, 
+  
+    }); 
   
    tl.from(".phoneInventory", {  
       ease: Power3.easeOut, delay: 0.4, 

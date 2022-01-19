@@ -20,11 +20,11 @@ import { gsap } from "gsap";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Header() {
-  let tl = new gsap.timeline({
-    repeat: 0,
-  });
-
+  
   useEffect(() => {
+    let tl = new gsap.timeline({
+      repeat: 0,
+    });
     tl.from(".yellowback", {
       ease: Power3.easeOut,
       delay: 0.1,

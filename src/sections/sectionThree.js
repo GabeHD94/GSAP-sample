@@ -1,9 +1,7 @@
 import React, { useEffect } from "react";
 import DualPanelThree from "../components/shared/sectionThreePanels";
 import { ThemeProvider } from "styled-components";
-import Map from "../assests/map.png";
 import Porsche from "../assests/porsche-model.png";
-import CarDelivery from "../assests/carDelivery.png";
 import MapPath from "../assests/mapPath.png";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Power3 } from "gsap";
@@ -21,13 +19,13 @@ const theme = {
 
 
 export default function SectionThree() {
-  let tl = new gsap.timeline({
-
-    repeat: 0,
-
-  });
-  
   useEffect(() => {
+    let tl = new gsap.timeline({
+  
+      repeat: 0,
+  
+    });
+    
   
     tl.from(".mapapp", {  
       ease: Power3.easeOut, delay: 0.1,  

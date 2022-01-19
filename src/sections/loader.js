@@ -9,13 +9,13 @@ import { gsap } from "gsap";
 
 export default function Loader() {
 
-  let tl = new gsap.timeline({
-
-    repeat: 0, 
-
-  }); 
   
   useEffect(() => {
+    let tl = new gsap.timeline({
+  
+      repeat: 0, 
+  
+    }); 
   
    tl.from(".loaddot", {  
       ease: Power3.easeOut,

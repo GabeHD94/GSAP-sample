@@ -7,7 +7,7 @@ import Maintenance from "../assests/maintenance.png";
 import Oval from "../assests/Oval.png";
 import { ThemeProvider } from "styled-components";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { Power3, TimelineLite } from "gsap";
+import { Power3 } from "gsap";
 import { gsap } from "gsap";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -18,12 +18,12 @@ const theme = {
 };
 
 export default function SectionFive() {
-  let tl = new gsap.timeline({
-
-    repeat: 0,
-  });
-
+  
   useEffect(() => {
+    let tl = new gsap.timeline({
+  
+      repeat: 0,
+    });
     tl.from(
       ".triPanel1",
       {

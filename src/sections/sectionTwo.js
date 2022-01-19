@@ -20,11 +20,11 @@ const theme = {
 };
 
 export default function SectionTwo() {
-  let tl = new gsap.timeline({
-    repeat: 0,
-  });
-
+  
   useEffect(() => {
+    let tl = new gsap.timeline({
+      repeat: 0,
+    });
     tl.from(".yellowpanel", {
       duration: 0.4,
       scaleX: 0,
